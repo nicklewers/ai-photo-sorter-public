@@ -52,10 +52,23 @@ nav {
     padding: 1rem 0;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
+    margin: 0;
 }
 
 .nav-links {
@@ -79,6 +92,15 @@ nav {
     padding: 4rem 0 6rem;
     text-align: center;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hero-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 2rem;
+    display: block;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
 }
 
 .hero-content h1 {
