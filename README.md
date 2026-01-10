@@ -1,9 +1,9 @@
-# AI Photo Sorter - Website
+# PhotoCull - Website
 
-This repository hosts the GitHub Pages website for AI Photo Sorter, including:
+This repository hosts the GitHub Pages website for PhotoCull, including:
 - Landing page
 - Privacy Policy
 - Support & FAQ
 
-Built for AI Photo Sorter iOS App
+Built for PhotoCull iOS App
 
