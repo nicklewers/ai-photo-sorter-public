@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for PhotoCull - Your photos never leave your device.">
+    <meta name="description" content="Privacy Policy for PhotoCull. Your photos never leave your phone.">
     <title>Privacy Policy - PhotoCull</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,106 +28,127 @@
         <div class="container">
             <article>
                 <h1>Privacy Policy for PhotoCull</h1>
-                <p class="last-updated"><strong>Last Updated:</strong> October 17, 2025</p>
+                <p class="last-updated"><strong>Last Updated:</strong> October 6, 2026</p>
 
                 <section>
                     <h2>Our Privacy Commitment</h2>
-                    <p>PhotoCull is designed with privacy as a core principle. We believe your photos are personal, and we've built our app to ensure they stay that way.</p>
+                    <p class="highlight"><strong>Your photos never leave your phone.</strong></p>
+                    <p>PhotoCull analyzes your library on your iPhone. We do not upload your photos, and we do not run a server that receives them.</p>
+                    <p>The app does use the internet for other things. This page says what those are: anonymous usage stats, clustering settings, feedback you choose to send, Apple purchases, and a small record of free sessions.</p>
                 </section>
 
                 <section>
-                    <h2>Data Collection and Processing</h2>
-                    <p class="highlight"><strong>We do not collect, store, or transmit any of your photos or personal data.</strong></p>
-
-                    <h3>What Happens On Your Device</h3>
+                    <h2>Photos Stay on Your iPhone</h2>
                     <ul>
-                        <li>All AI processing occurs entirely on your device using Apple's Vision framework</li>
-                        <li>Photo analysis, quality scoring, and similarity detection happen locally</li>
-                        <li>No photos, image data, or analysis results are ever sent to our servers</li>
-                        <li>No internet connection is required for the app to function</li>
-                    </ul>
-
-                    <h3>Information We Do NOT Collect</h3>
-                    <ul>
-                        <li>❌ Your photos or images</li>
-                        <li>❌ Photo metadata (dates, locations, camera info)</li>
-                        <li>❌ Face data or biometric information</li>
-                        <li>❌ Personal information (name, email, etc.)</li>
-                        <li>❌ Usage analytics or behavior tracking</li>
-                        <li>❌ Device identifiers or advertising IDs</li>
+                        <li>Photo analysis, quality scoring, and similarity detection run on your device with Apple's Vision framework.</li>
+                        <li>We do not receive your photos, image data, or analysis of what is in them.</li>
+                        <li>We do not receive photo metadata such as dates, locations, or camera details, and we do not receive filenames or face data.</li>
+                        <li>That analysis does not need a network connection. Purchases, usage stats, settings, and iCloud sync do use a connection when they run.</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h3>Permissions Required</h3>
+                    <h2>What We Don't Receive</h2>
+                    <ul>
+                        <li>Your photos or videos</li>
+                        <li>Photo metadata, filenames, locations, or library identifiers</li>
+                        <li>Face data or other biometric information</li>
+                        <li>Your name, email, or an account — PhotoCull does not ask you to sign up</li>
+                        <li>Your payment card or billing address</li>
+                        <li>Apple's advertising identifier. We do not track you across other companies' apps or show ads.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Anonymous Usage Stats (PostHog)</h2>
+                    <p>PhotoCull sends product analytics to <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">PostHog</a> so we can see how the app is used and improve it. Events go to PostHog in the United States (us.i.posthog.com). This is on unless you turn it off in Settings.</p>
+                    <h3>What is sent</h3>
+                    <ul>
+                        <li>Product interaction events: for example starting or finishing a cleanup, using Best Photos, changing a setting, and, when purchases are offered, viewing or completing a purchase.</li>
+                        <li>Coarse details that go with those events, such as counts, timings, the plan you selected, and the price and currency shown. Not the photos.</li>
+                        <li>An anonymous distinct ID that the PostHog SDK creates for the install. We do not attach your name or email to it.</li>
+                        <li>App lifecycle signals the SDK sends with this configuration, such as the app opening. Session replay, screen recording, and automatic tap tracking are turned off in the app.</li>
+                    </ul>
+                    <p>We do not send photo content, filenames, locations, album names, or photo identifiers to PostHog.</p>
+                    <h3>How long it is kept</h3>
+                    <p>The app does not set a retention period. PostHog keeps events for the period configured on our PostHog project. This page does not state a fixed number of days, because that setting can change. Email us if you want the current period, or if you want analytics for your install deleted.</p>
+                    <h3>Opt out</h3>
+                    <p>In Settings, turn off <strong>Share anonymous usage stats</strong>. That stops these PostHog analytics from this device. You can turn them back on later. Photo analysis works either way.</p>
+                </section>
+
+                <section>
+                    <h2>Firebase Remote Config and Firestore</h2>
+                    <p>We use Google Firebase for settings and for feedback. Product analytics go to PostHog. Firebase Analytics is turned off in the app's Firebase configuration.</p>
+                    <h3>Remote Config</h3>
+                    <p>The app fetches clustering settings so we can tune how similar photos are grouped without an app update. Those settings are numbers, not your photos. Firebase's SDK typically includes an installation identifier with that request. We use it to fetch the configuration, not for advertising.</p>
+                    <h3>Firestore</h3>
+                    <p>If you submit in-app feedback, we store it in Firebase Firestore. That record can include the comment you typed, the ratings you gave, counts from that session (photos, groups, and deletions), the app version, the iOS version, and the time you sent it. We do not send this unless you submit feedback. Don't put secrets in a comment.</p>
+                </section>
+
+                <section>
+                    <h2>Apple In-App Purchase</h2>
+                    <p>If you buy PhotoCull Pro, Apple processes the payment. We do not receive your card number, billing address, or full Apple ID receipt from you.</p>
+                    <p>The app only gets the signed transaction status on your device. That status is what tells PhotoCull whether Pro is active. Purchase analytics, if usage stats are on, can include the plan, product, price, and currency. They are described above under PostHog.</p>
+                </section>
+
+                <section>
+                    <h2>Free-Usage Record</h2>
+                    <p>Free PhotoCull includes a weekly allowance. The app stores the dates of your free cleanups and Best Photos shares so it knows whether you have used that allowance.</p>
+                    <p>The record is stored in your device's Keychain and, if iCloud is on, in your iCloud key-value storage. That way the weekly allowance can follow you across reinstalls and your devices. It contains no photos or photo information. It stays in your Keychain and your iCloud account. We do not receive it.</p>
+                </section>
+
+                <section>
+                    <h2>Photo Library Access</h2>
                     <div class="info-box">
-                        <h4>Photo Library Access (Required)</h4>
+                        <h3>Required to clean up your library</h3>
                         <ul>
-                            <li>The app needs permission to read your photos for analysis</li>
-                            <li>Write permission is required to delete photos you choose to remove</li>
-                            <li>All access is handled through Apple's secure PhotoKit framework</li>
-                            <li>You can revoke this permission anytime in iOS Settings</li>
+                            <li>Read access lets the app analyze photos on your device.</li>
+                            <li>Write access lets the app delete photos you confirm, or save a Best Photos album you ask for.</li>
+                            <li>Access goes through Apple's PhotoKit. You can revoke it in iOS Settings.</li>
                         </ul>
                     </div>
                 </section>
 
                 <section>
-                    <h2>Third-Party Services</h2>
-                    <p>We do not use any third-party analytics, tracking, or advertising services.</p>
-                </section>
-
-                <section>
-                    <h2>Data Storage</h2>
-                    <p>No data from the app is stored on our servers because we don't have any servers. All processing happens on your device, and any temporary data used during analysis is stored only in your device's memory and automatically cleared when you close the app.</p>
-                </section>
-
-                <section>
                     <h2>Children's Privacy</h2>
-                    <p>Our app does not knowingly collect any information from anyone, including children under 13. Since all processing is on-device and we collect no data, the app is safe for users of all ages.</p>
+                    <p>PhotoCull is not directed at children under 13. We don't ask for a name, email, or account. If a child uses the app, photo analysis still stays on the device. The usage stats above can be turned off in Settings. If feedback was submitted for a child and you want it removed, email us.</p>
                 </section>
 
                 <section>
-                    <h2>Changes to Photos</h2>
-                    <p>The app can only delete photos with your explicit confirmation. When you delete photos through the app:</p>
-                    <ul>
-                        <li>Photos are moved to your "Recently Deleted" album in iOS Photos</li>
-                        <li>They remain recoverable for 30 days (standard iOS behavior)</li>
-                        <li>You can restore them anytime within that period</li>
-                    </ul>
+                    <h2>Deleting Photos</h2>
+                    <p>The app deletes photos only after you confirm. Deleted photos move to Recently Deleted in the Photos app. iOS keeps them there for about 30 days, and you can restore them during that time.</p>
                 </section>
 
                 <section>
-                    <h2>International Users</h2>
-                    <p>Since all processing happens on your device and no data leaves your device, there are no international data transfers or regional restrictions.</p>
+                    <h2>Where Data Is Processed</h2>
+                    <p>Photo analysis stays on your iPhone. Usage stats are sent to PostHog in the United States. Firebase is operated by Google; this page does not name a separate Firebase region. The free-usage record in iCloud stays with your Apple ID's iCloud account.</p>
+                </section>
+
+                <section>
+                    <h2>Terms of Use</h2>
+                    <p>PhotoCull Pro, when you buy it, is an Apple In-App Purchase licensed under <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple's Standard EULA</a>.</p>
                 </section>
 
                 <section>
                     <h2>Changes to This Policy</h2>
-                    <p>We may update this privacy policy from time to time. Any changes will be posted here with an updated "Last Updated" date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+                    <p>We may update this policy. The new version will be posted on this page with a new Last Updated date.</p>
                 </section>
 
                 <section>
                     <h2>Contact Us</h2>
-                    <p>If you have questions about this privacy policy or how the app works, please contact us at:</p>
+                    <p>Questions about this policy, or a request to delete feedback or analytics tied to your use:</p>
                     <p><strong>Email:</strong> <a href="mailto:nick.lewers@gmail.com">nick.lewers@gmail.com</a></p>
                 </section>
 
                 <section>
-                    <h2>Legal Compliance</h2>
-                    <p>This app complies with:</p>
-                    <ul>
-                        <li>GDPR (General Data Protection Regulation)</li>
-                        <li>CCPA (California Consumer Privacy Act)</li>
-                        <li>COPPA (Children's Online Privacy Protection Act)</li>
-                        <li>Apple's App Store Review Guidelines</li>
-                    </ul>
-                    <p>Since we collect no personal data, many privacy regulations do not apply, but we're committed to maintaining the highest privacy standards regardless.</p>
+                    <h2>Privacy Laws</h2>
+                    <p>We wrote this policy to be straight about what the app does, and to support requests under laws such as the GDPR, CCPA, and COPPA, and under Apple's App Store Review Guidelines. Email us and we will help with a request.</p>
                 </section>
 
                 <section class="summary-box">
                     <h2>Summary</h2>
-                    <p class="highlight"><strong>Your photos never leave your device. Period.</strong></p>
-                    <p>We built PhotoCull to help you organize your photo library using powerful on-device AI, without compromising your privacy. We can't access your photos because we never receive them in the first place.</p>
+                    <p class="highlight"><strong>Your photos never leave your phone.</strong></p>
+                    <p>Analysis stays on your iPhone. We never receive the photos. Unless you turn it off, we do receive anonymous usage stats. Purchases go through Apple. A free-session record stays in your Keychain and, if iCloud is on, your iCloud.</p>
                 </section>
             </article>
         </div>
@@ -145,6 +166,7 @@
                     <ul>
                         <li><a href="support.html">Support & FAQ</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of Use</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -153,10 +175,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 PhotoCull. All rights reserved.</p>
+                <p>&copy; 2026 PhotoCull. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
 </html>
-
